@@ -1,28 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = 'My Astro Blog';
-const description = 'The perfect starter for your perfect blog.';
+const title = 'KUG (ZhengZhou)';
+const description = '';
 const permalink = Astro.site.href;
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
-      <h1>Welcome to your new Astro Blog</h1>
-      <p>Check out the docs on <a href="https://www.github.com/Charca/astro-blog-template" target="_blank" rel="noopener">GitHub</a> to get started.</p>
+      <h1>ZhengZhou<br>Kotlin User Group</h1>
+      <p>一群热爱 Kotlin 的人。</p>
     </div>
-
     <div class="hero-image-container">
       <picture>
-        <source srcset="/assets/home-illustration.webp" media="(min-width: 600px)">
-        <img class="hero-image" alt="Illustration of person reading a book" src="/assets/home-illustration-small.webp" width="550" height="466">
+        <!-- <source srcset="/assets/kotlin_logos/Digital/mark/Full Color/Kotlin Full Color Logo Mark RGB.svg" media="(min-width: 600px)"> -->
+        <img class="hero-image" alt="" src="/assets/kotlin_logos/Digital/mark/Full Color/Kotlin Full Color Logo Mark RGB.svg" width="550">
       </picture>
       <p class="caption">
-        Illustration by
-        <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="_blank" rel="noopener">Icons 8</a>
-        from
-        <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
+        绝不玩原神。
       </p>
     </div>
   </div>
@@ -41,6 +37,7 @@ const permalink = Astro.site.href;
   .home-copy {
     flex: 1;
     padding: 0 1em;
+    max-width: 700px;
   }
 
   .home-copy h1 {
@@ -61,18 +58,23 @@ const permalink = Astro.site.href;
   .hero-image-container picture {
     display: block;
     min-height: 250px;
+    border: 1px solid;
+    border-image-source: linear-gradient(45deg, #804FF2, #CD4C74);
+    border-image-slice: 1;
+    padding: 1.75rem;
   }
 
   .caption {
     font-size: .8em;
-    font-style: italic;
     text-align: left;
+    background-image: linear-gradient(45deg, #804FF2, #CD4C74);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
   }
 
   .hero-image {
     width: 100%;
-    max-width: 550px;
-    margin-bottom: 1em;
+    max-width: 400px;
   }
 
   @media (max-width: 1200px) {
