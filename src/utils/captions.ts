@@ -40,8 +40,6 @@ export const captions: string[] = [
     "绝不用 Chez Scheme。",
     "绝不用 Golang。",
     "绝不玩原神。",
-    "绝不玩王者荣耀。",
-    "绝不玩明日方舟。",
     "绝不玩星穹轨道。"
 ];
 
