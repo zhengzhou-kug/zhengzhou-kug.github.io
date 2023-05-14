@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import getRandomCaption from '../utils/captions';
 
 const title = 'KUG (ZhengZhou)';
 const description = '';
@@ -9,7 +10,7 @@ const permalink = Astro.site.href;
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
-      <h1>ZhengZhou<br>Kotlin User Group</h1>
+      <h1>郑州<br>Kotlin 用户组</h1>
       <p>一群热爱 Kotlin 的人。</p>
     </div>
     <div class="hero-image-container">
@@ -18,7 +19,7 @@ const permalink = Astro.site.href;
         <img class="hero-image" alt="" src="/assets/kt_logo.svg" width="550">
       </picture>
       <p class="caption">
-        绝不玩原神。
+        {getRandomCaption}
       </p>
     </div>
   </div>
