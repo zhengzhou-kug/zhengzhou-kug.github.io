@@ -11,7 +11,7 @@ export const captions: string[] = [
     "绝不用 Isabelle。",
     "绝不用 PHP。",
     "绝不用 Clojure。",
-    "绝不用 Rust",
+    "绝不用 Rust。",
     "绝不用 C。",
     "绝不用 C++。",
     "绝不用 C#。",
