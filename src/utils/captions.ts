@@ -5,6 +5,8 @@ export const captions: string[] = [
     "绝不用 OCaml。",
     "绝不用 Coq。",
     "绝不用 Agda。",
+    "绝不用 Lean。",
+    "绝不用 Arend。",
     "绝不用 Koka。",
     "绝不用 Isabelle。",
     "绝不用 PHP。",
@@ -38,6 +40,9 @@ export const captions: string[] = [
     "绝不用 Chez Scheme。",
     "绝不用 Golang。",
     "绝不玩原神。",
+    "绝不玩王者荣耀。",
+    "绝不玩明日方舟。",
+    "绝不玩星穹轨道。"
 ];
 
 export default function getRandomCaption(): string {
