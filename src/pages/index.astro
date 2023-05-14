@@ -18,7 +18,7 @@ const permalink = Astro.site.href;
         <!-- <source srcset="/assets/kotlin_logos/Digital/mark/Full Color/Kotlin Full Color Logo Mark RGB.svg" media="(min-width: 600px)"> -->
         <img class="hero-image" alt="" src="/assets/kt_logo.svg" width="550">
       </picture>
-      <p class="caption">
+      <p id="caption" class="caption">
         
       </p>
     </div>
@@ -31,6 +31,7 @@ const permalink = Astro.site.href;
   document.addEventListener('DOMContentLoaded', () => {
     const randomCaptionElement = document.getElementById("caption");
     randomCaptionElement.textContent = getRandomCaption();
+    console.log("reached dom loaded")
   });
 </script>
 
