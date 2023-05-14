@@ -9,6 +9,7 @@ const permalink = `${Astro.site.href}about`;
 <BaseLayout title={title} description={description} permalink={permalink} current="about">
   <div class="container">
     <h1 style="margin-bottom: 1rem;">关于我们</h1>
+    <img src="/assets/banner.png" alt="" class="about-image">
     <p>
       这里是郑州 Kotlin 用户组，旨在分享、交流与讨论 Kotlin 编程语言及其相关生态系统。<br>
     </p>
@@ -16,19 +17,12 @@ const permalink = `${Astro.site.href}about`;
       欢迎所有热爱 Kotlin 的开发者加入我们！<br>
       不偷井盖、不玩原神。
     </p>
-    <img src="/assets/a76953.jpg" alt="" class="about-image">
   </div>
 </BaseLayout>
 
 <style>
-  .about-image {
+  .banner {
     border-radius: 8px;
   }
-
-  /* @media (max-width: 1020px) {
-    .about-image {
-      float: none;
-      margin: 0 auto 2em;
-    }
-  } */
+ 
 </style>
