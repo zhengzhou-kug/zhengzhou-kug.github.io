@@ -19,11 +19,20 @@ const permalink = Astro.site.href;
         <img class="hero-image" alt="" src="/assets/kt_logo.svg" width="550">
       </picture>
       <p class="caption">
-        {getRandomCaption()}
+        
       </p>
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  import getRandomCaption from "../utils/captions";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const randomCaptionElement = document.getElementById("caption");
+    randomCaptionElement.textContent = getRandomCaption();
+  });
+</script>
 
 <style>
   .home-container {
