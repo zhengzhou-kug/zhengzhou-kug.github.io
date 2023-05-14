@@ -5,8 +5,6 @@ import getRandomCaption from "../utils/captions";
 const title = 'KUG (ZhengZhou)';
 const description = '';
 const permalink = Astro.site.href;
-
-const caption = getRandomCaption();
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
@@ -21,7 +19,7 @@ const caption = getRandomCaption();
         <img class="hero-image" alt="" src="/assets/kt_logo.svg" width="550">
       </picture>
       <p class="caption">
-        {caption}
+        {getRandomCaption()}
       </p>
     </div>
   </div>
